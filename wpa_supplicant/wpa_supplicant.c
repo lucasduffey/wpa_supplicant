@@ -3162,8 +3162,8 @@ static int select_driver(struct wpa_supplicant *wpa_s, unsigned int idx)
 		}
 	}
 
-	wpa_s->driver = wpa_drivers[i];
-	wpa_s->global_drv_priv = global->drv_priv[i];
+	wpa_s->driver = wpa_drivers[idx];
+	wpa_s->global_drv_priv = global->drv_priv[idx];
 
 	return 0;
 }
