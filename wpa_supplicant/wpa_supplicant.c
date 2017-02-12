@@ -3196,7 +3196,7 @@ static int wpa_supplicant_set_driver(struct wpa_supplicant *wpa_s,
 		else
 			len = os_strlen(driver);
 
-		for (unsigned int idx = 0; wpa_drivers[idx]; i++) {
+		for (unsigned int idx = 0; wpa_drivers[idx]; idx++) {
 			if (os_strlen(wpa_drivers[idx]->name) == len &&
 			    os_strncmp(driver, wpa_drivers[idx]->name, len) ==
 			    0) {
